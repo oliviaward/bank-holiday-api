@@ -1,0 +1,14 @@
+service: liv-aws-sammie
+frameworkVersion: "3"
+
+provider:
+  name: aws
+  runtime: nodejs14.x
+  region: "eu-west-1"
+
+functions:
+  hello:
+    handler: handler.hello
+
+plugins:
+  - serverless-esbuild
